@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "title": "Leo's Juice & Burger Lübeck-Kücknitz",
+    "description": "Juicy burgers, fresh juices and honest flavour in Lübeck-Kücknitz."
+  },
+  "navigation": {
+    "start": "Home",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "reserve": "Reserve a table",
+    "logoAria": "Leo's Juice & Burger, home",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "languageLabel": "Language",
+    "switchTo": "Switch to {language}",
+    "german": "German",
+    "english": "English"
+  },
+  "footer": {
+    "intro": "Good ingredients, honest flavour and a seat for everyone. More restaurant details will follow.",
+    "restaurant": "Restaurant",
+    "address": "Address to follow",
+    "city": "Lübeck-Kücknitz",
+    "phone": "Phone to follow",
+    "email": "Email to follow",
+    "openingHours": "Opening hours",
+    "days": "Monday – Sunday",
+    "hours": "Opening hours to follow",
+    "placeholderNote": "Placeholder until confirmed",
+    "overview": "Quick links",
+    "instagram": "Instagram (placeholder)",
+    "facebook": "Facebook (placeholder)",
+    "copyright": "© 2026 Leo's Juice & Burger",
+    "imprint": "Legal notice",
+    "privacy": "Privacy policy"
+  }
+}

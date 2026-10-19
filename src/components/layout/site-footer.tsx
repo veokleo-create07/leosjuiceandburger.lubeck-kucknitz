@@ -1,18 +1,23 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+
+import { Link } from "@/i18n/navigation";
 
 const navigation = [
-  { label: "Startseite", href: "/" },
-  { label: "Speisekarte", href: "/#speisekarte" },
-  { label: "Galerie", href: "/#galerie" },
-  { label: "Kontakt", href: "/#kontakt" },
+  { key: "start", href: "/" },
+  { key: "menu", href: "/#speisekarte" },
+  { key: "gallery", href: "/#galerie" },
+  { key: "contact", href: "/#kontakt" },
 ];
 
 const socialLinks = [
-  { label: "Instagram (Platzhalter)", href: "#instagram" },
-  { label: "Facebook (Platzhalter)", href: "#facebook" },
+  { key: "instagram", href: "#instagram" },
+  { key: "facebook", href: "#facebook" },
 ];
 
 export function SiteFooter() {
+  const tNavigation = useTranslations("navigation");
+  const t = useTranslations("footer");
+
   return (
     <footer className="bg-charcoal text-cream">
       <div className="content-width page-padding section-spacing">
@@ -21,41 +26,39 @@ export function SiteFooter() {
             <p className="font-heading text-3xl font-semibold tracking-tight">
               Leo&apos;s <span className="text-burnt-orange">Juice &amp; Burger</span>
             </p>
-            <p className="type-body mt-4 max-w-xs text-cream/65">
-              Gute Zutaten, ehrlicher Geschmack und ein Platz für alle. Weitere Restaurantdetails folgen.
-            </p>
+            <p className="type-body mt-4 max-w-xs text-cream/65">{t("intro")}</p>
           </div>
 
           <div>
-            <h2 className="type-label text-cream/50">Restaurant</h2>
+            <h2 className="type-label text-cream/50">{t("restaurant")}</h2>
             <address className="type-body mt-4 space-y-1 not-italic text-cream/80">
-              <p>Adresse folgt</p>
-              <p>Lübeck-Kücknitz</p>
-              <p>Telefon folgt</p>
-              <p>E-Mail folgt</p>
+              <p>{t("address")}</p>
+              <p>{t("city")}</p>
+              <p>{t("phone")}</p>
+              <p>{t("email")}</p>
             </address>
           </div>
 
           <div>
-            <h2 className="type-label text-cream/50">Öffnungszeiten</h2>
+            <h2 className="type-label text-cream/50">{t("openingHours")}</h2>
             <div className="type-body mt-4 space-y-1 text-cream/80">
-              <p>Montag – Sonntag</p>
-              <p>Öffnungszeiten folgen</p>
-              <p className="pt-2 text-sm text-cream/50">Platzhalter bis bestätigt</p>
+              <p>{t("days")}</p>
+              <p>{t("hours")}</p>
+              <p className="pt-2 text-sm text-cream/50">{t("placeholderNote")}</p>
             </div>
           </div>
 
           <div>
-            <h2 className="type-label text-cream/50">Auf einen Blick</h2>
-            <nav className="mt-4 flex flex-col items-start gap-2" aria-label="Footer-Navigation">
+            <h2 className="type-label text-cream/50">{t("overview")}</h2>
+            <nav className="mt-4 flex flex-col items-start gap-2" aria-label={t("overview")}>
               {navigation.map((item) => (
                 <Link key={item.href} href={item.href} className="text-sm text-cream/80 transition-colors hover:text-cream">
-                  {item.label}
+                  {tNavigation(item.key)}
                 </Link>
               ))}
               {socialLinks.map((item) => (
                 <Link key={item.href} href={item.href} className="text-sm text-cream/80 transition-colors hover:text-cream">
-                  {item.label}
+                  {t(item.key)}
                 </Link>
               ))}
             </nav>
@@ -63,13 +66,13 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-16 flex flex-col gap-4 border-t border-cream/15 pt-6 text-sm text-cream/50 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 Leo&apos;s Juice &amp; Burger</p>
+          <p>{t("copyright")}</p>
           <div className="flex gap-5">
             <Link href="#impressum" className="transition-colors hover:text-cream">
-              Impressum
+              {t("imprint")}
             </Link>
             <Link href="#datenschutz" className="transition-colors hover:text-cream">
-              Datenschutz
+              {t("privacy")}
             </Link>
           </div>
         </div>
