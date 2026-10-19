@@ -5,7 +5,9 @@
   },
   "hero": {
     "location": "Lübeck-Kücknitz",
-    "headline": "Richtig gute Burger. Frische Säfte. Leo's.",
+    "headlineLine1": "Richtig gute Burger.",
+    "headlineLine2": "Frische Säfte.",
+    "headlineLine3": "Leo's.",
     "supportingText": "Frisch zubereitet, mit Liebe gemacht. Entdecke Leo's in Lübeck-Kücknitz.",
     "reserveCta": "Tisch reservieren",
     "menuCta": "Speisekarte ansehen",

@@ -61,13 +61,13 @@ export function SiteHeader() {
           </nav>
 
           <div className="hidden items-center gap-4 md:flex">
-            <LocalizedLink href="/#reservierung" className="button-base button-primary">
+            <LocalizedLink href="/#reservierung" className="button-base button-editorial button-primary">
               {t("reserve")}
             </LocalizedLink>
             <LocalizedLink
               href={pathname}
               locale={otherLocale}
-              className="rounded-full border border-charcoal/15 px-3 py-2 text-xs font-semibold text-charcoal transition-colors hover:border-charcoal"
+              className="rounded-sm border border-charcoal/15 px-3 py-2 text-xs font-semibold text-charcoal transition-colors hover:border-charcoal"
               aria-label={t("switchTo", { language: otherLocale === "de" ? t("german") : t("english") })}
             >
               {otherLocale === "de" ? "DE" : "EN"}
