@@ -48,7 +48,7 @@ export function SiteHeader() {
             </span>
           </LocalizedLink>
 
-          <nav className="hidden items-center gap-8 md:flex" aria-label={t("mainNavigation")}>
+          <nav className="hidden items-center gap-6 md:flex lg:gap-8" aria-label={t("mainNavigation")}>
             {navigation.map((item) => (
               <LocalizedLink
                 key={item.href}
