@@ -4,9 +4,10 @@
     "description": "Saftige Burger, frische Säfte und ehrlicher Geschmack in Lübeck-Kücknitz."
   },
   "hero": {
+    "location": "Lübeck-Kücknitz",
     "headlineLine1": "Burger, die",
     "headlineLine2": "begeistern.",
-    "supportingText": "Handgemachte Burger, frische Säfte und Leo's in Lübeck-Kücknitz.",
+    "supportingText": "Handgemachte Burger, frische Säfte und entspannte Momente bei Leo's in Lübeck-Kücknitz.",
     "reserveCta": "Tisch reservieren",
     "menuCta": "Speisekarte ansehen",
     "imageAlt": "Ein saftiger Burger mit frischen Zutaten und knusprigen Pommes"

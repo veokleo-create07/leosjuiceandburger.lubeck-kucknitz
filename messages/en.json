@@ -4,9 +4,10 @@
     "description": "Juicy burgers, fresh juices and honest flavour in Lübeck-Kücknitz."
   },
   "hero": {
+    "location": "Lübeck-Kücknitz",
     "headlineLine1": "Burgers that",
     "headlineLine2": "delight.",
-    "supportingText": "Handmade burgers, fresh juices and Leo's in Lübeck-Kücknitz.",
+    "supportingText": "Handmade burgers, fresh juices and relaxed moments at Leo's in Lübeck-Kücknitz.",
     "reserveCta": "Reserve a table",
     "menuCta": "View the menu",
     "imageAlt": "A juicy burger with fresh ingredients and crisp fries"
