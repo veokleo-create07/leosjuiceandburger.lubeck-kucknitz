@@ -70,7 +70,7 @@ export function SiteHeader() {
               className="rounded-sm border border-charcoal/15 px-3 py-2 text-xs font-semibold text-charcoal transition-colors hover:border-charcoal"
               aria-label={t("switchTo", { language: otherLocale === "de" ? t("german") : t("english") })}
             >
-              {otherLocale === "de" ? "DE" : "EN"}
+              {otherLocale === "de" ? "de" : "en"}
             </LocalizedLink>
           </div>
 
@@ -112,24 +112,24 @@ export function SiteHeader() {
             >
               {t("reserve")}
             </LocalizedLink>
-            <div className="mt-5 flex items-center justify-between rounded-full border border-charcoal/15 px-4 py-3">
+            <div className="mt-5 flex items-center justify-between border border-charcoal/15 px-4 py-3">
               <span className="text-sm font-medium text-charcoal/65">{t("languageLabel")}</span>
               <div className="flex gap-2">
                 <LocalizedLink
                   href={pathname}
                   locale="de"
-                  className={`rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${locale === "de" ? "bg-charcoal text-cream" : "text-charcoal/65 hover:text-charcoal"}`}
+                  className={`rounded-sm px-3 py-1.5 text-xs font-semibold transition-colors ${locale === "de" ? "bg-charcoal text-cream" : "text-charcoal/65 hover:text-charcoal"}`}
                   onClick={() => setMenuOpen(false)}
                 >
-                  DE
+                  de
                 </LocalizedLink>
                 <LocalizedLink
                   href={pathname}
                   locale="en"
-                  className={`rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${locale === "en" ? "bg-charcoal text-cream" : "text-charcoal/65 hover:text-charcoal"}`}
+                  className={`rounded-sm px-3 py-1.5 text-xs font-semibold transition-colors ${locale === "en" ? "bg-charcoal text-cream" : "text-charcoal/65 hover:text-charcoal"}`}
                   onClick={() => setMenuOpen(false)}
                 >
-                  EN
+                  en
                 </LocalizedLink>
               </div>
             </div>

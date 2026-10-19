@@ -8,25 +8,23 @@ export function Hero() {
 
   return (
     <section className="hero-shell relative overflow-hidden" aria-labelledby="hero-heading">
-      <span className="hero-sun" aria-hidden="true" />
       <div className="content-width page-padding relative">
         <div className="hero-stage">
-          <figure className="hero-art hero-media-reveal">
+          <figure className="hero-art hero-media-reveal hero-scroll-reveal">
             <span className="hero-art-backdrop" aria-hidden="true" />
             <div className="hero-art-image relative z-10 overflow-hidden bg-olive-green/10">
-            <Image
-              src="/hero-burger-placeholder.png"
-              alt={t("imageAlt")}
-              fill
-              priority
-              sizes="(max-width: 767px) 100vw, 58vw"
-              className="object-cover object-[62%_center]"
-            />
-            <figcaption className="absolute bottom-0 left-0 bg-cream/90 px-3 py-2 text-[0.7rem] text-charcoal/65 backdrop-blur-sm">
-              {t("temporaryImageNote")}
-            </figcaption>
+              <Image
+                src="/hero-burger-placeholder.png"
+                alt={t("imageAlt")}
+                fill
+                priority
+                sizes="(max-width: 767px) 100vw, 58vw"
+                className="object-cover object-[62%_center]"
+              />
+              <figcaption className="absolute bottom-0 left-0 bg-cream/90 px-3 py-2 text-[0.7rem] text-charcoal/65 backdrop-blur-sm">
+                {t("temporaryImageNote")}
+              </figcaption>
             </div>
-            <span className="hero-art-stamp" aria-hidden="true">L</span>
           </figure>
 
           <div className="hero-copy">

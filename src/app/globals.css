@@ -189,22 +189,17 @@
   animation: hero-scale-in 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-.hero-media-frame {
-  position: relative;
-}
-
-.hero-media-frame::before {
-  position: absolute;
-  inset: 0.65rem -0.65rem -0.65rem 0.65rem;
-  border: 1px solid color-mix(in srgb, var(--burnt-orange) 55%, transparent);
-  content: "";
-  pointer-events: none;
+@supports (animation-timeline: view()) {
+  .hero-scroll-reveal {
+    animation-timeline: view();
+    animation-range: entry 0% cover 28%;
+  }
 }
 
 .hero-stage {
   position: relative;
-  min-height: clamp(38rem, 70vw, 48rem);
-  padding-block: clamp(2.5rem, 6vw, 5rem);
+  min-height: clamp(35rem, 64vw, 45rem);
+  padding-block: clamp(2rem, 5vw, 4.5rem);
 }
 
 .hero-copy {
@@ -229,29 +224,10 @@
 
 .hero-art-backdrop {
   position: absolute;
-  inset: 1rem -1rem -1rem 1rem;
+  inset: 1rem -0.8rem -0.8rem 0.8rem;
   background: var(--burnt-orange);
-  border-radius: 42% 0 0;
+  border-radius: 34% 0 0;
   opacity: 0.9;
-}
-
-.hero-art-stamp {
-  position: absolute;
-  right: -1rem;
-  bottom: 2rem;
-  z-index: 20;
-  display: grid;
-  width: 3.5rem;
-  height: 3.5rem;
-  place-items: center;
-  border: 1px solid var(--cream);
-  border-radius: 9999px;
-  background: var(--olive-green);
-  color: var(--cream);
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 600;
-  transform: rotate(8deg);
 }
 
 .hero-kicker {
@@ -277,17 +253,6 @@
 .hero-support {
   border-left: 2px solid color-mix(in srgb, var(--olive-green) 35%, transparent);
   padding-left: 1rem;
-}
-
-.hero-sun {
-  position: absolute;
-  top: 9rem;
-  left: -4rem;
-  width: 13rem;
-  height: 13rem;
-  border: 1px solid color-mix(in srgb, var(--olive-green) 28%, transparent);
-  border-radius: 9999px;
-  box-shadow: 0 0 0 1.25rem color-mix(in srgb, var(--olive-green) 7%, transparent);
 }
 
 @media (min-width: 768px) and (max-width: 1100px) {
@@ -322,13 +287,6 @@
     aspect-ratio: 4 / 3;
   }
 
-  .hero-art-stamp {
-    right: -0.75rem;
-    bottom: 1.25rem;
-    width: 3rem;
-    height: 3rem;
-  }
-
   .hero-copy {
     order: 2;
     max-width: none;
@@ -336,12 +294,6 @@
     padding-top: 0;
   }
 
-  .hero-sun {
-    top: 15rem;
-    left: -7rem;
-    width: 12rem;
-    height: 12rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
