@@ -37,6 +37,20 @@
       "imageAlt": "Goldene Pommes in einer hellen Keramikschale"
     }
   },
+  "about": {
+    "label": "Über Leo's",
+    "headingLine1": "Mehr als nur",
+    "headingLine2": "Burger.",
+    "intro": "Frisch zubereitete, handgemachte Burger, frische Säfte und ein Ort, an dem man gerne bleibt. Leo's verbindet ehrliches Essen mit einer herzlichen Atmosphäre in Lübeck-Kücknitz.",
+    "location": "Lübeck-Kücknitz",
+    "temporaryImageNote": "Temporäres Bild – wird durch Leo's Fotografie ersetzt.",
+    "atmosphere": {
+      "imageAlt": "Warme, einladende Restaurantatmosphäre mit Tischen und einem Burger"
+    },
+    "preparation": {
+      "imageAlt": "Hände beim Zusammenstellen eines frisch zubereiteten Burgers"
+    }
+  },
   "navigation": {
     "start": "Startseite",
     "menu": "Speisekarte",

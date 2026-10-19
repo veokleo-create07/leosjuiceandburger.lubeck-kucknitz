@@ -37,6 +37,20 @@
       "imageAlt": "Golden fries in a light ceramic bowl"
     }
   },
+  "about": {
+    "label": "About Leo's",
+    "headingLine1": "More than just",
+    "headingLine2": "burgers.",
+    "intro": "Freshly prepared, handmade burgers, fresh juices and a place where you want to stay awhile. Leo's brings honest food and a welcoming atmosphere together in Lübeck-Kücknitz.",
+    "location": "Lübeck-Kücknitz",
+    "temporaryImageNote": "Temporary image – to be replaced with Leo's photography.",
+    "atmosphere": {
+      "imageAlt": "Warm, welcoming restaurant atmosphere with tables and a burger"
+    },
+    "preparation": {
+      "imageAlt": "Hands assembling a freshly prepared burger"
+    }
+  },
   "navigation": {
     "start": "Home",
     "menu": "Menu",
