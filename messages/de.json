@@ -68,6 +68,12 @@
     "imageAlt": "Einladende Restaurantatmosphäre mit Tischen und warmem Tageslicht",
     "temporaryImageNote": "Temporäres Bild – wird durch Leo's Fotografie ersetzt."
   },
+  "reservationCta": {
+    "label": "Dein Tisch bei Leo's",
+    "heading": "Lust auf richtig gute Burger?",
+    "supportingText": "Sichere dir deinen Tisch bei Leo's in Lübeck-Kücknitz.",
+    "button": "Tisch reservieren"
+  },
   "navigation": {
     "start": "Startseite",
     "menu": "Speisekarte",
@@ -92,6 +98,9 @@
     "phone": "Telefon folgt",
     "email": "E-Mail folgt",
     "openingHours": "Öffnungszeiten",
+    "navigation": "Navigation",
+    "contact": "Kontakt",
+    "social": "Social",
     "days": "Montag – Sonntag",
     "hours": "Öffnungszeiten folgen",
     "placeholderNote": "Platzhalter bis bestätigt",

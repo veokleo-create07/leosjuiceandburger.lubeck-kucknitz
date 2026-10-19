@@ -20,55 +20,64 @@ export function SiteFooter() {
   const t = useTranslations("footer");
 
   return (
-    <footer className="bg-charcoal text-cream">
+    <footer className="site-footer bg-charcoal text-cream">
       <div className="content-width page-padding section-spacing">
-        <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr_1fr] md:gap-8">
-          <div>
-            <p className="font-heading text-3xl font-semibold tracking-tight">
+        <div className="site-footer-grid">
+          <div className="site-footer-brand">
+            <p className="site-footer-logo">
               Leo&apos;s <span className="text-burnt-orange">Juice &amp; Burger</span>
             </p>
             <p className="type-body mt-4 max-w-xs text-cream/65">{t("intro")}</p>
           </div>
 
-          <div>
-            <h2 className="type-label text-cream/50">{t("restaurant")}</h2>
-            <address className="type-body mt-4 space-y-1 not-italic text-cream/80">
+          <div className="site-footer-column">
+            <h2 className="site-footer-heading">{t("restaurant")}</h2>
+            <address className="site-footer-list type-body not-italic">
               <p>{businessInfo.address ?? t("address")}</p>
               <p>{businessInfo.city}</p>
-              <p>{businessInfo.phone ?? t("phone")}</p>
-              <p>{businessInfo.email ?? t("email")}</p>
             </address>
           </div>
 
-          <div>
-            <h2 className="type-label text-cream/50">{t("openingHours")}</h2>
-            <div className="type-body mt-4 space-y-1 text-cream/80">
+          <div className="site-footer-column">
+            <h2 className="site-footer-heading">{t("openingHours")}</h2>
+            <div className="site-footer-list type-body">
               <p>{t("days")}</p>
               <p>{businessInfo.openingHours ?? t("hours")}</p>
-              <p className="pt-2 text-sm text-cream/50">{t("placeholderNote")}</p>
+              <p className="site-footer-note">{t("placeholderNote")}</p>
             </div>
           </div>
 
-          <div>
-            <h2 className="type-label text-cream/50">{t("overview")}</h2>
-            <nav className="mt-4 flex flex-col items-start gap-2" aria-label={t("overview")}>
+          <div className="site-footer-column">
+            <h2 className="site-footer-heading">{t("navigation")}</h2>
+            <nav className="site-footer-list" aria-label={t("navigation")}>
               {navigation.map((item) => (
-                <Link key={item.href} href={item.href} className="text-sm text-cream/80 transition-colors hover:text-cream">
+                <Link key={item.href} href={item.href} className="site-footer-link">
                   {tNavigation(item.key)}
-                </Link>
-              ))}
-              {socialLinks.map((item) => (
-                <Link key={item.href} href={item.href} className="text-sm text-cream/80 transition-colors hover:text-cream">
-                  {t(item.key)}
                 </Link>
               ))}
             </nav>
           </div>
+
+          <div className="site-footer-column">
+            <h2 className="site-footer-heading">{t("contact")}</h2>
+            <address className="site-footer-list type-body not-italic">
+              <p>{businessInfo.phone ?? t("phone")}</p>
+              <p>{businessInfo.email ?? t("email")}</p>
+            </address>
+            <p className="site-footer-subheading">{t("social")}</p>
+            <div className="site-footer-social">
+              {socialLinks.map((item) => (
+                <Link key={item.href} href={item.href} className="site-footer-link">
+                  {t(item.key)}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
 
-        <div className="mt-16 flex flex-col gap-4 border-t border-cream/15 pt-6 text-sm text-cream/50 sm:flex-row sm:items-center sm:justify-between">
+        <div className="site-footer-bottom">
           <p>{t("copyright")}</p>
-          <div className="flex gap-5">
+          <div className="flex flex-wrap gap-5">
             <Link href="#impressum" className="transition-colors hover:text-cream">
               {t("imprint")}
             </Link>

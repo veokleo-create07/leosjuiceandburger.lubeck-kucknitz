@@ -68,6 +68,12 @@
     "imageAlt": "Welcoming restaurant atmosphere with tables and warm daylight",
     "temporaryImageNote": "Temporary image – to be replaced with Leo's photography."
   },
+  "reservationCta": {
+    "label": "Your table at Leo's",
+    "heading": "Ready for really good burgers?",
+    "supportingText": "Reserve your table at Leo's in Lübeck-Kücknitz.",
+    "button": "Reserve a table"
+  },
   "navigation": {
     "start": "Home",
     "menu": "Menu",
@@ -92,6 +98,9 @@
     "phone": "Phone to follow",
     "email": "Email to follow",
     "openingHours": "Opening hours",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "social": "Social",
     "days": "Monday – Sunday",
     "hours": "Opening hours to follow",
     "placeholderNote": "Placeholder until confirmed",
