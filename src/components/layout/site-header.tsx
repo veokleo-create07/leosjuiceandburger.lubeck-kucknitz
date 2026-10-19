@@ -48,7 +48,7 @@ export function SiteHeader() {
             </span>
           </LocalizedLink>
 
-          <nav className="hidden items-center gap-5 lg:flex lg:gap-7" aria-label={t("mainNavigation")}>
+          <nav className="hidden items-center gap-4 lg:flex lg:gap-6" aria-label={t("mainNavigation")}>
             {navigation.map((item) => (
               <LocalizedLink
                 key={item.href}
@@ -60,7 +60,12 @@ export function SiteHeader() {
             ))}
           </nav>
 
-          <div className="hidden items-center gap-4 lg:flex">
+          <div className="hidden items-center gap-3 lg:flex">
+            <span className="mr-1 hidden items-center gap-2 text-xs font-medium text-charcoal/70 xl:inline-flex">
+              <span className="size-1.5 rounded-full bg-burnt-orange" aria-hidden="true" />
+              {t("location")}
+            </span>
+            <span className="hidden h-5 w-px bg-charcoal/15 xl:block" aria-hidden="true" />
             <LocalizedLink href="/#reservierung" className="button-base button-editorial button-primary">
               {t("reserve")}
             </LocalizedLink>

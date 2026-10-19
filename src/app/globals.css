@@ -133,10 +133,10 @@
   }
 }
 
-@keyframes campaign-copy-reveal {
+@keyframes reference-copy-reveal {
   from {
     opacity: 0;
-    transform: translateY(1.25rem);
+    transform: translateY(1rem);
   }
 
   to {
@@ -145,10 +145,10 @@
   }
 }
 
-@keyframes campaign-art-reveal {
+@keyframes reference-art-reveal {
   from {
     opacity: 0;
-    transform: translateY(1.5rem) scale(0.96);
+    transform: translateY(1.25rem) scale(0.965);
   }
 
   to {
@@ -157,205 +157,252 @@
   }
 }
 
-.hero-campaign {
+.hero-reference {
   overflow: hidden;
   background: var(--cream);
 }
 
-.hero-campaign-canvas {
+.hero-reference-canvas {
   position: relative;
   display: grid;
-  min-height: min(45rem, calc(100svh - 4.5rem));
+  min-height: min(48rem, calc(100svh - 4.5rem));
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: auto 1fr auto auto;
-  column-gap: clamp(0.75rem, 2vw, 2rem);
+  grid-template-rows: 1fr auto;
+  column-gap: clamp(0.75rem, 1.8vw, 1.75rem);
+  padding-top: clamp(2.5rem, 5vw, 5rem);
+  padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
   isolation: isolate;
 }
 
-.hero-campaign-location {
+.hero-reference-title {
   position: relative;
-  z-index: 6;
+  z-index: 5;
   grid-column: 1 / -1;
   grid-row: 1;
-  align-self: start;
-  padding-top: clamp(1.25rem, 2.5vw, 2rem);
-  color: var(--olive-green);
-}
-
-.hero-campaign-title {
-  position: relative;
-  z-index: 4;
-  grid-column: 1 / -1;
-  grid-row: 2 / 4;
   align-self: center;
-  margin-block: clamp(2rem, 4vw, 3rem);
+  margin-block: clamp(1rem, 3vw, 2rem);
   font-family: var(--font-heading);
-  font-size: clamp(5.25rem, 12vw, 11.5rem);
-  font-weight: 650;
-  line-height: 0.79;
-  letter-spacing: -0.085em;
+  font-size: clamp(5.75rem, 12.4vw, 11.5rem);
+  font-weight: 700;
+  line-height: 0.72;
+  letter-spacing: -0.09em;
   pointer-events: none;
 }
 
-.hero-campaign-line {
+.hero-reference-line {
   display: block;
   width: max-content;
   max-width: 100%;
 }
 
-.hero-campaign-line-primary {
-  margin-left: clamp(0rem, 2vw, 2rem);
+.hero-reference-line-black {
+  margin-left: clamp(0rem, 1vw, 1rem);
 }
 
-.hero-campaign-line-accent {
-  margin-left: clamp(4rem, 17vw, 15rem);
+.hero-reference-line-orange {
+  margin-left: clamp(1.75rem, 4vw, 4rem);
 }
 
-.hero-campaign-support {
+.hero-reference-line-final {
+  margin-left: clamp(0rem, 1vw, 1rem);
+}
+
+.hero-reference-support {
   position: relative;
   z-index: 6;
   grid-column: 1 / span 5;
-  grid-row: 4;
+  grid-row: 2;
   align-self: end;
-  max-width: 27rem;
-  margin-block: 0 clamp(1.5rem, 3vw, 2.25rem);
-  font-size: 1.05rem;
+  max-width: 25rem;
+  margin: 0 0 0.35rem;
+  font-size: 0.98rem;
+  line-height: 1.45;
 }
 
-.hero-campaign-actions {
+.hero-reference-actions {
   position: relative;
   z-index: 6;
   display: flex;
-  grid-column: 6 / span 7;
-  grid-row: 4;
+  grid-column: 6 / -1;
+  grid-row: 2;
   align-items: end;
-  justify-content: flex-end;
-  gap: 0.75rem;
-  margin-block: 0 clamp(1.5rem, 3vw, 2.25rem);
+  justify-content: flex-start;
+  gap: 0.7rem;
+  margin: 0 0 0.15rem;
 }
 
-.hero-campaign-art {
+.hero-reference-art {
   position: absolute;
-  right: 0;
-  bottom: clamp(1rem, 3vw, 2.5rem);
+  right: clamp(-1.25rem, -0.5vw, 0rem);
+  bottom: clamp(3rem, 5vw, 5rem);
   z-index: 3;
-  width: min(48vw, 42rem);
-  height: min(34rem, 48vw);
+  width: min(50vw, 43rem);
+  height: min(37rem, 51vw);
   pointer-events: none;
 }
 
-.hero-campaign-reveal {
-  animation: campaign-copy-reveal 750ms cubic-bezier(0.22, 1, 0.36, 1) both;
+.hero-reference-reveal {
+  animation: reference-copy-reveal 750ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-.hero-campaign-reveal-delay-1 {
+.hero-reference-reveal-delay-1 {
   animation-delay: 60ms;
 }
 
-.hero-campaign-reveal-delay-2 {
+.hero-reference-reveal-delay-2 {
   animation-delay: 140ms;
 }
 
-.hero-campaign-reveal-delay-3 {
+.hero-reference-reveal-delay-3 {
   animation-delay: 220ms;
 }
 
-.hero-campaign-reveal-delay-4 {
+.hero-reference-reveal-delay-4 {
   animation-delay: 300ms;
 }
 
-.hero-campaign-art-reveal {
-  animation: campaign-art-reveal 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+.hero-reference-art-reveal {
+  animation: reference-art-reveal 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-reference-mark {
+  position: absolute;
+  z-index: 6;
+  display: block;
+  width: 2.6rem;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: var(--olive-green);
+  pointer-events: none;
+}
+
+.hero-reference-mark-left {
+  top: 28%;
+  left: clamp(0.25rem, 1vw, 1rem);
+  transform: rotate(62deg);
+}
+
+.hero-reference-mark-top {
+  top: 22%;
+  right: 17%;
+  width: 2.2rem;
+  transform: rotate(-62deg);
+}
+
+.hero-reference-mark-bottom {
+  right: 38%;
+  bottom: 22%;
+  width: 3.5rem;
+  transform: rotate(-8deg);
 }
 
 @media (min-width: 768px) and (max-width: 1100px) {
-  .hero-campaign-title {
-    font-size: clamp(4.2rem, 10.7vw, 7.25rem);
+  .hero-reference-title {
+    font-size: clamp(4.7rem, 11.5vw, 7.75rem);
   }
 
-  .hero-campaign-line-accent {
-    margin-left: clamp(2rem, 12vw, 7rem);
+  .hero-reference-line-orange {
+    margin-left: clamp(1rem, 4vw, 2.5rem);
   }
 
-  .hero-campaign-art {
+  .hero-reference-art {
     right: 0;
-    bottom: 2rem;
-    width: 48vw;
-    height: 27rem;
+    bottom: 4rem;
+    width: 49vw;
+    height: 28rem;
   }
 
-  .hero-campaign-support {
-    grid-column: 1 / span 6;
+  .hero-reference-support {
+    grid-column: 1 / span 5;
+    max-width: 18rem;
   }
 
-  .hero-campaign-actions {
+  .hero-reference-actions {
     grid-column: 7 / -1;
   }
 }
 
 @media (max-width: 767px) {
-  .hero-campaign-canvas {
+  .hero-reference-canvas {
     min-height: 0;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
     column-gap: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
-  .hero-campaign-location {
+  .hero-reference-title {
     grid-column: 1;
     grid-row: 1;
-    padding-top: 1.25rem;
-  }
-
-  .hero-campaign-title {
-    grid-column: 1;
-    grid-row: 2;
     align-self: start;
-    margin-block: 2.75rem 0;
-    font-size: clamp(4rem, 17vw, 5.2rem);
-    line-height: 0.84;
+    margin-block: 1rem 0;
+    font-size: clamp(4.1rem, 17vw, 5.25rem);
+    line-height: 0.76;
   }
 
-  .hero-campaign-line {
+  .hero-reference-line {
     width: auto;
     max-width: 100%;
   }
 
-  .hero-campaign-line-primary,
-  .hero-campaign-line-accent {
+  .hero-reference-line-black,
+  .hero-reference-line-final {
     margin-left: 0;
   }
 
-  .hero-campaign-support {
+  .hero-reference-line-orange {
+    margin-left: 1rem;
+  }
+
+  .hero-reference-art {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    height: min(18rem, 64vw);
+    margin-top: -0.75rem;
+    transform: translateX(7%);
+  }
+
+  .hero-reference-support {
     grid-column: 1;
     grid-row: 3;
     max-width: 22rem;
-    margin-block: 1.75rem 0;
-    font-size: 1rem;
+    margin-block: 1.25rem 0;
+    font-size: 0.98rem;
   }
 
-  .hero-campaign-actions {
+  .hero-reference-actions {
     display: grid;
     grid-column: 1;
     grid-row: 4;
     grid-template-columns: 1fr;
     gap: 0.65rem;
-    margin-block: 1.5rem 0;
+    margin-block: 1.25rem 0;
   }
 
-  .hero-campaign-actions .button-base {
+  .hero-reference-actions .button-base {
     width: 100%;
   }
 
-  .hero-campaign-art {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    grid-column: 1;
-    grid-row: 5;
-    width: 100%;
-    height: min(19rem, 68vw);
-    margin-top: 1.25rem;
+  .hero-reference-mark-left {
+    top: 16%;
+    left: auto;
+    right: 4%;
+  }
+
+  .hero-reference-mark-top {
+    top: 32%;
+    right: 6%;
+  }
+
+  .hero-reference-mark-bottom {
+    right: 8%;
+    bottom: 31%;
+    width: 2.75rem;
   }
 }
 
@@ -727,8 +774,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-campaign-reveal,
-  .hero-campaign-art-reveal,
+  .hero-reference-reveal,
+  .hero-reference-art-reveal,
   .specialties-reveal {
     animation: none;
   }

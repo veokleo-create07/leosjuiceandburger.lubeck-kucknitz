@@ -7,26 +7,29 @@ export function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="hero-campaign" aria-labelledby="hero-heading">
-      <div className="hero-campaign-canvas content-width page-padding">
-        <p className="hero-campaign-location hero-campaign-reveal hero-campaign-reveal-delay-1 type-label">
-          {t("location")}
-        </p>
+    <section className="hero-reference" aria-labelledby="hero-heading">
+      <div className="hero-reference-canvas content-width page-padding">
+        <span className="hero-reference-mark hero-reference-mark-left" aria-hidden="true" />
+        <span className="hero-reference-mark hero-reference-mark-top" aria-hidden="true" />
+        <span className="hero-reference-mark hero-reference-mark-bottom" aria-hidden="true" />
 
-        <h1 id="hero-heading" className="hero-campaign-title text-charcoal">
-          <span className="hero-campaign-line hero-campaign-line-primary hero-campaign-reveal hero-campaign-reveal-delay-1">
+        <h1 id="hero-heading" className="hero-reference-title text-charcoal">
+          <span className="hero-reference-line hero-reference-line-black hero-reference-reveal hero-reference-reveal-delay-1">
             {t("headlineLine1")}
           </span>
-          <span className="hero-campaign-line hero-campaign-line-accent hero-campaign-reveal hero-campaign-reveal-delay-2 text-burnt-orange">
+          <span className="hero-reference-line hero-reference-line-orange hero-reference-reveal hero-reference-reveal-delay-2 text-burnt-orange">
             {t("headlineLine2")}
+          </span>
+          <span className="hero-reference-line hero-reference-line-orange hero-reference-line-final hero-reference-reveal hero-reference-reveal-delay-3 text-burnt-orange">
+            {t("headlineLine3")}
           </span>
         </h1>
 
-        <p className="hero-campaign-support hero-campaign-reveal hero-campaign-reveal-delay-3 type-body text-charcoal/70">
+        <p className="hero-reference-support hero-reference-reveal hero-reference-reveal-delay-4 type-body text-charcoal/70">
           {t("supportingText")}
         </p>
 
-        <div className="hero-campaign-actions hero-campaign-reveal hero-campaign-reveal-delay-4">
+        <div className="hero-reference-actions hero-reference-reveal hero-reference-reveal-delay-4">
           <Link href="/#reservierung" className="button-base hero-cta button-editorial button-primary">
             {t("reserveCta")}
           </Link>
@@ -35,7 +38,7 @@ export function Hero() {
           </Link>
         </div>
 
-        <figure className="hero-campaign-art hero-campaign-art-reveal">
+        <figure className="hero-reference-art hero-reference-art-reveal">
           <Image
             src="/hero-burger-cutout.png"
             alt={t("imageAlt")}
