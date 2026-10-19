@@ -10,9 +10,7 @@ export function Hero() {
     <section className="hero-editorial relative overflow-hidden" aria-labelledby="hero-heading">
       <div className="content-width page-padding relative">
         <div className="hero-editorial-topline hero-reveal hero-reveal-delay-1">
-          <span className="hero-editorial-rule" aria-hidden="true" />
           <span>{t("location")}</span>
-          <span className="hero-editorial-number" aria-hidden="true">01</span>
         </div>
 
         <div className="hero-editorial-stage">

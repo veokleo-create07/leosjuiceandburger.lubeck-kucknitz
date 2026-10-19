@@ -48,7 +48,7 @@ export function SiteHeader() {
             </span>
           </LocalizedLink>
 
-          <nav className="hidden items-center gap-5 md:flex lg:gap-7" aria-label={t("mainNavigation")}>
+          <nav className="hidden items-center gap-5 lg:flex lg:gap-7" aria-label={t("mainNavigation")}>
             {navigation.map((item) => (
               <LocalizedLink
                 key={item.href}
@@ -60,7 +60,7 @@ export function SiteHeader() {
             ))}
           </nav>
 
-          <div className="hidden items-center gap-4 md:flex">
+          <div className="hidden items-center gap-4 lg:flex">
             <LocalizedLink href="/#reservierung" className="button-base button-editorial button-primary">
               {t("reserve")}
             </LocalizedLink>
@@ -76,7 +76,7 @@ export function SiteHeader() {
 
           <button
             type="button"
-            className="flex size-11 items-center justify-center rounded-sm border border-charcoal/15 text-charcoal transition-colors hover:border-charcoal md:hidden"
+            className="flex size-11 items-center justify-center rounded-sm border border-charcoal/15 text-charcoal transition-colors hover:border-charcoal lg:hidden"
             aria-expanded={menuOpen}
             aria-controls="mobile-navigation"
             aria-label={menuOpen ? t("closeMenu") : t("openMenu")}
@@ -92,7 +92,7 @@ export function SiteHeader() {
 
         <div
           id="mobile-navigation"
-          className={`overflow-hidden transition-[max-height,opacity] duration-300 md:hidden ${menuOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"}`}
+          className={`overflow-hidden transition-[max-height,opacity] duration-300 lg:hidden ${menuOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"}`}
         >
           <nav className="flex flex-col border-t border-charcoal/10 pt-4" aria-label={t("mobileNavigation")}>
             {navigation.map((item) => (

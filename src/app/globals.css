@@ -174,7 +174,7 @@
 }
 
 .hero-editorial {
-  min-height: min(50rem, calc(100svh - 5rem));
+  min-height: min(46rem, calc(100svh - 4.5rem));
   background: var(--cream);
 }
 
@@ -183,8 +183,7 @@
   z-index: 20;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding-top: clamp(1.5rem, 3vw, 2.5rem);
+  padding-top: clamp(1rem, 2vw, 1.5rem);
   color: var(--olive-green);
   font-family: var(--font-sans);
   font-size: 0.75rem;
@@ -192,34 +191,22 @@
   letter-spacing: 0.02em;
 }
 
-.hero-editorial-rule {
-  width: 2.5rem;
-  height: 1px;
-  background: var(--burnt-orange);
-}
-
-.hero-editorial-number {
-  margin-left: 0.25rem;
-  color: color-mix(in srgb, var(--charcoal) 45%, transparent);
-  font-size: 0.7rem;
-}
-
 .hero-editorial-stage {
   position: relative;
-  min-height: clamp(38rem, 65vw, 47rem);
+  min-height: clamp(34rem, 61vw, 42rem);
 }
 
 .hero-editorial-copy {
   position: relative;
   z-index: 10;
-  width: min(100%, 42rem);
-  padding-top: clamp(4.5rem, 11vw, 8.5rem);
+  width: min(52%, 36rem);
+  padding-top: clamp(2.25rem, 5vw, 4rem);
 }
 
 .hero-editorial-title {
-  max-width: 39rem;
+  max-width: 36rem;
   font-family: var(--font-heading);
-  font-size: clamp(3.35rem, 7.5vw, 7rem);
+  font-size: clamp(3.15rem, 6.5vw, 6rem);
   font-weight: 600;
   line-height: 0.9;
   letter-spacing: -0.065em;
@@ -233,7 +220,7 @@
   position: relative;
   z-index: 20;
   width: min(100%, 28rem);
-  margin-top: clamp(2rem, 5vw, 3.5rem);
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .hero-editorial-support {
@@ -246,11 +233,11 @@
 
 .hero-editorial-art {
   position: absolute;
-  top: clamp(1rem, 4vw, 3.5rem);
-  right: clamp(-5rem, -2vw, -1rem);
+  top: clamp(0rem, 1.5vw, 1rem);
+  right: clamp(-3rem, -1vw, 0rem);
   z-index: 5;
-  width: min(58vw, 47rem);
-  height: min(48rem, 68vw);
+  width: min(50vw, 42rem);
+  height: min(43rem, 62vw);
   pointer-events: none;
 }
 
@@ -289,13 +276,18 @@
 }
 
 @media (min-width: 768px) and (max-width: 1100px) {
+  .hero-editorial-copy {
+    width: 48%;
+  }
+
   .hero-editorial-title {
-    font-size: clamp(3rem, 7vw, 5rem);
+    font-size: clamp(2.85rem, 6.5vw, 4.75rem);
   }
 
   .hero-editorial-art {
-    right: -3rem;
-    width: 57vw;
+    right: -1.5rem;
+    width: 49vw;
+    height: 39rem;
   }
 }
 
@@ -313,12 +305,13 @@
   .hero-editorial-copy {
     display: flex;
     flex-direction: column;
-    padding-top: 3.5rem;
+    width: 100%;
+    padding-top: 2.25rem;
   }
 
   .hero-editorial-title {
     max-width: 24rem;
-    font-size: clamp(3.35rem, 15vw, 5rem);
+    font-size: clamp(3rem, 14vw, 4.6rem);
     line-height: 0.91;
   }
 
@@ -332,10 +325,10 @@
     top: auto;
     right: auto;
     order: 2;
-    width: 112%;
-    height: min(30rem, 92vw);
-    margin-top: -1rem;
-    margin-left: -6%;
+    width: 100%;
+    height: min(25rem, 82vw);
+    margin-top: 0.5rem;
+    margin-left: 0;
   }
 
   .hero-editorial-art::before {
