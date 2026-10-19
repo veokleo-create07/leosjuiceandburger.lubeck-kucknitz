@@ -3,6 +3,15 @@
     "title": "Leo's Juice & Burger Lübeck-Kücknitz",
     "description": "Saftige Burger, frische Säfte und ehrlicher Geschmack in Lübeck-Kücknitz."
   },
+  "hero": {
+    "location": "Lübeck-Kücknitz",
+    "headline": "Richtig gute Burger. Frische Säfte. Leo's.",
+    "supportingText": "Frisch zubereitet, mit Liebe gemacht. Entdecke Leo's in Lübeck-Kücknitz.",
+    "reserveCta": "Tisch reservieren",
+    "menuCta": "Speisekarte ansehen",
+    "imageAlt": "Ein saftiger Burger mit frischen Zutaten und knusprigen Pommes",
+    "temporaryImageNote": "Temporäres Bild – wird durch Leo's Fotografie ersetzt."
+  },
   "navigation": {
     "start": "Startseite",
     "menu": "Speisekarte",
