@@ -51,6 +51,23 @@
       "imageAlt": "Hände beim Zusammenstellen eines frisch zubereiteten Burgers"
     }
   },
+  "visit": {
+    "label": "Besuch uns in Kücknitz",
+    "headingLine1": "Dein neuer",
+    "headingLine2": "Lieblingsplatz in Kücknitz.",
+    "intro": "Komm vorbei, nimm Platz und entdecke frisch zubereitete Burger, frische Säfte und eine entspannte Zeit bei Leo's.",
+    "addressLabel": "Adresse",
+    "hoursLabel": "Öffnungszeiten",
+    "phoneLabel": "Telefon",
+    "placeholderAddress": "Adresse folgt",
+    "placeholderHours": "Öffnungszeiten folgen",
+    "placeholderPhone": "Telefon folgt",
+    "reserveCta": "Tisch reservieren",
+    "directionsCta": "Route planen",
+    "locationLabel": "Standort",
+    "imageAlt": "Einladende Restaurantatmosphäre mit Tischen und warmem Tageslicht",
+    "temporaryImageNote": "Temporäres Bild – wird durch Leo's Fotografie ersetzt."
+  },
   "navigation": {
     "start": "Startseite",
     "menu": "Speisekarte",

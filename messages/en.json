@@ -51,6 +51,23 @@
       "imageAlt": "Hands assembling a freshly prepared burger"
     }
   },
+  "visit": {
+    "label": "Visit us in Kücknitz",
+    "headingLine1": "Your new",
+    "headingLine2": "favourite place in Kücknitz.",
+    "intro": "Drop by, take a seat and enjoy freshly prepared burgers, fresh juices and an easy-going time at Leo's.",
+    "addressLabel": "Address",
+    "hoursLabel": "Opening hours",
+    "phoneLabel": "Phone",
+    "placeholderAddress": "Address to follow",
+    "placeholderHours": "Opening hours to follow",
+    "placeholderPhone": "Phone to follow",
+    "reserveCta": "Reserve a table",
+    "directionsCta": "Plan your route",
+    "locationLabel": "Location",
+    "imageAlt": "Welcoming restaurant atmosphere with tables and warm daylight",
+    "temporaryImageNote": "Temporary image – to be replaced with Leo's photography."
+  },
   "navigation": {
     "start": "Home",
     "menu": "Menu",

@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 
+import { businessInfo } from "@/config/business";
 import { Link } from "@/i18n/navigation";
 
 const navigation = [
@@ -32,10 +33,10 @@ export function SiteFooter() {
           <div>
             <h2 className="type-label text-cream/50">{t("restaurant")}</h2>
             <address className="type-body mt-4 space-y-1 not-italic text-cream/80">
-              <p>{t("address")}</p>
-              <p>{t("city")}</p>
-              <p>{t("phone")}</p>
-              <p>{t("email")}</p>
+              <p>{businessInfo.address ?? t("address")}</p>
+              <p>{businessInfo.city}</p>
+              <p>{businessInfo.phone ?? t("phone")}</p>
+              <p>{businessInfo.email ?? t("email")}</p>
             </address>
           </div>
 
@@ -43,7 +44,7 @@ export function SiteFooter() {
             <h2 className="type-label text-cream/50">{t("openingHours")}</h2>
             <div className="type-body mt-4 space-y-1 text-cream/80">
               <p>{t("days")}</p>
-              <p>{t("hours")}</p>
+              <p>{businessInfo.openingHours ?? t("hours")}</p>
               <p className="pt-2 text-sm text-cream/50">{t("placeholderNote")}</p>
             </div>
           </div>
