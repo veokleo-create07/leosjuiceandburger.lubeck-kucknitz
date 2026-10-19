@@ -14,6 +14,29 @@
     "imageAlt": "A juicy burger with fresh ingredients and crisp fries",
     "temporaryImageNote": "Temporary image – to be replaced with Leo's photography."
   },
+  "specialties": {
+    "label": "Our specialties",
+    "headingLine1": "Made fresh.",
+    "headingLine2": "Full of flavour.",
+    "intro": "Three things that define Leo's – honest, fresh and made with care.",
+    "menuCta": "Discover the menu",
+    "temporaryImageNote": "Temporary image – to be replaced with Leo's photography.",
+    "burgers": {
+      "title": "Burgers",
+      "description": "Freshly prepared and at the heart of Leo's.",
+      "imageAlt": "A freshly prepared cheeseburger on a warm surface"
+    },
+    "juices": {
+      "title": "Fresh juices",
+      "description": "Fresh juices with natural flavour and vivid colour.",
+      "imageAlt": "A glass of freshly pressed orange juice with carrots and orange"
+    },
+    "sides": {
+      "title": "Sides",
+      "description": "The right companions for your visit to Leo's.",
+      "imageAlt": "Golden fries in a light ceramic bowl"
+    }
+  },
   "navigation": {
     "start": "Home",
     "menu": "Menu",

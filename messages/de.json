@@ -14,6 +14,29 @@
     "imageAlt": "Ein saftiger Burger mit frischen Zutaten und knusprigen Pommes",
     "temporaryImageNote": "Temporäres Bild – wird durch Leo's Fotografie ersetzt."
   },
+  "specialties": {
+    "label": "Unsere Spezialitäten",
+    "headingLine1": "Frisch gemacht.",
+    "headingLine2": "Voller Geschmack.",
+    "intro": "Drei Dinge, die Leo's ausmachen – ehrlich, frisch und mit Liebe gemacht.",
+    "menuCta": "Speisekarte entdecken",
+    "temporaryImageNote": "Temporäres Bild – wird durch Leo's Fotografie ersetzt.",
+    "burgers": {
+      "title": "Burger",
+      "description": "Frisch zubereitet und im Mittelpunkt von Leo's.",
+      "imageAlt": "Ein frisch zubereiteter Cheeseburger auf einer warmen Oberfläche"
+    },
+    "juices": {
+      "title": "Frische Säfte",
+      "description": "Frische Säfte mit natürlichem Geschmack und klarer Farbe.",
+      "imageAlt": "Ein Glas frisch gepresster Orangensaft mit Karotten und Orange"
+    },
+    "sides": {
+      "title": "Beilagen",
+      "description": "Die passenden Begleiter für deinen Besuch bei Leo's.",
+      "imageAlt": "Goldene Pommes in einer hellen Keramikschale"
+    }
+  },
   "navigation": {
     "start": "Startseite",
     "menu": "Speisekarte",
