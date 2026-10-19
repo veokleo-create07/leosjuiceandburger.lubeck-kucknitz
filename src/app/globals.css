@@ -1,24 +1,122 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cream: #f6f0e4;
+  --charcoal: #24221f;
+  --burnt-orange: #b7482d;
+  --olive-green: #64704a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-cream: var(--cream);
+  --color-charcoal: var(--charcoal);
+  --color-burnt-orange: var(--burnt-orange);
+  --color-olive-green: var(--olive-green);
+  --font-heading: "Bricolage Grotesque", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --spacing-page: clamp(1.25rem, 4vw, 4rem);
+  --spacing-content: min(100%, 72rem);
+  --spacing-section: clamp(4rem, 10vw, 9rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@utility page-padding {
+  padding-inline: var(--spacing-page);
+}
+
+@utility content-width {
+  width: var(--spacing-content);
+  margin-inline: auto;
+}
+
+@utility section-spacing {
+  padding-block: var(--spacing-section);
+}
+
+@utility type-display {
+  font-family: var(--font-heading);
+  font-size: clamp(2.75rem, 9vw, 7rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+@utility type-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+@utility type-subheading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+@utility type-body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@utility type-label {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+@utility button-base {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding-inline: 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+@utility button-primary {
+  background-color: var(--burnt-orange);
+  color: var(--cream);
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--burnt-orange) 88%, var(--charcoal));
+  }
+}
+
+@utility button-secondary {
+  border: 1px solid color-mix(in srgb, var(--charcoal) 20%, transparent);
+  background-color: transparent;
+  color: var(--charcoal);
+
+  &:hover {
+    border-color: var(--charcoal);
+    background-color: color-mix(in srgb, var(--cream) 70%, var(--charcoal));
+  }
+}
+
+@utility button-olive {
+  background-color: var(--olive-green);
+  color: var(--cream);
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--olive-green) 88%, var(--charcoal));
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-sans);
 }
