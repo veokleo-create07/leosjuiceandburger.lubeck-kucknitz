@@ -33,14 +33,14 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-charcoal/10 bg-cream/95 backdrop-blur-md">
       <div className="content-width page-padding">
-        <div className="flex h-20 items-center justify-between gap-6">
+        <div className="flex h-[4.5rem] items-center justify-between gap-6">
           <LocalizedLink
             href="/"
             className="group flex shrink-0 items-center gap-3 text-charcoal"
             aria-label={t("logoAria")}
             onClick={() => setMenuOpen(false)}
           >
-            <span className="flex size-10 items-center justify-center rounded-full bg-burnt-orange font-heading text-xl font-semibold text-cream transition-transform duration-200 group-hover:-rotate-6">
+            <span className="flex size-9 items-center justify-center rounded-sm bg-burnt-orange font-heading text-xl font-semibold text-cream transition-transform duration-200 group-hover:-rotate-6">
               L
             </span>
             <span className="font-heading text-lg font-semibold leading-none tracking-tight">
@@ -48,7 +48,7 @@ export function SiteHeader() {
             </span>
           </LocalizedLink>
 
-          <nav className="hidden items-center gap-6 md:flex lg:gap-8" aria-label={t("mainNavigation")}>
+          <nav className="hidden items-center gap-5 md:flex lg:gap-7" aria-label={t("mainNavigation")}>
             {navigation.map((item) => (
               <LocalizedLink
                 key={item.href}
@@ -76,7 +76,7 @@ export function SiteHeader() {
 
           <button
             type="button"
-            className="flex size-11 items-center justify-center rounded-full border border-charcoal/15 text-charcoal transition-colors hover:border-charcoal md:hidden"
+            className="flex size-11 items-center justify-center rounded-sm border border-charcoal/15 text-charcoal transition-colors hover:border-charcoal md:hidden"
             aria-expanded={menuOpen}
             aria-controls="mobile-navigation"
             aria-label={menuOpen ? t("closeMenu") : t("openMenu")}
